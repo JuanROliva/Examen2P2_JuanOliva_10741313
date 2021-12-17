@@ -10,6 +10,10 @@ public class Carro_Salto extends Carro{
         super();
     }
 
+    public Carro_Salto(int velocidad, float porcentajeDerrape, String nombre, int ataque, int vida) {
+        super(velocidad, porcentajeDerrape, nombre, ataque, vida);
+    }
+    
     public int getCantidadSalto() {
         return cantidadSalto;
     }
