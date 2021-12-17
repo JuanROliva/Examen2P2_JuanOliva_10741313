@@ -1,8 +1,11 @@
 package exameniip2_juanoliva_10741313;
 
+import java.io.Serializable;
 import java.util.Random;
 
-public class Carro_Belicos extends Carro{ 
+public class Carro_Belicos extends Carro implements Serializable{ 
+    
+    public static final long SerialVersionUID = 1l;
     
     private Random aleaotio = new Random();
 
@@ -17,5 +20,4 @@ public class Carro_Belicos extends Carro{
     public void vidasAletorio(){
         super.setVida((1+aleaotio.nextInt(50))/100);
     }
-    
 }

@@ -1,10 +1,13 @@
 package exameniip2_juanoliva_10741313;
 
+import java.io.Serializable;
 import java.util.Random;
 
-public class Carro_Salto extends Carro{
+public class Carro_Salto extends Carro implements Serializable{
     private int cantidadSalto;
     private Random aleatorio = new Random();
+    
+    public static final long SerialVersionUID = 2l;
 
     public Carro_Salto() {
         super();
